@@ -39,7 +39,7 @@ $ npm install
  
 2.	Create a simple structure called Document, which stores the string hash of the document in IPFS and the date it has been added. The contract will have an array of documents and an address which will store the owner’s address.
  
-3.	A simple modifier onlyOwner which makes sure the caller of the method is the contract owner.
+3.	A simple modifier `onlyOwner` which makes sure the caller of the method is the contract owner.
  
 4.	Create the constructor, which will make the executor owner of the contract.
  
@@ -48,20 +48,20 @@ $ npm install
 6.	Finally, create `getDocumentsCount()` and `getDocument(uint256 index)` functions. This returns the count of the documents and a document by a given index.
  
 ## Create JavaScript Front-end
-1.	Create the jQuery function which will run as soon as the DOM becomes safe to manipulate:
+1.	Create the jQuery function which will run as soon as the DOM becomes safe to manipulate.
  
 
 2.	As of Metamask v4.14.0, a call to `ethereum.enable()` is necessary to gain access to a user’s accounts in Metamask and enable RPC interactions. Read more here if you want to look at more details: [EIPS](https://eips.ethereum.org/EIPS/eip-1102).
 
-Allow access using the injected Web3 in the browser.
+Allow access using the `Injected Web3` in the browser.
 
 3.	Next, insert the constants of the contract address and contract ABI. We will get back to this and replace it with the correct values after the contract is deployed. Also, initialize the IPFS library.
 
 4.	Prepare the function for uploading the document. There are preset codes before this code separated with User Interface Handlers Start/End markers. This takes care of adding handlers to the user interface components.
  
-5.	Check if there is any file to upload, if not, show error message:
+5.	Check if there is any file to upload, if not, show error message.
  
-6.	Create a file reader to read the given document as an array buffer:
+6.	Create a file reader to read the given document as an array buffer.
  
 7.	In the onload property check whether web3 is included.
 Then, use Buffer to get a buffer from the file reader result.
